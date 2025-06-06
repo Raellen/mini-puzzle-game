@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Puzzle Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <main class="container">
+      <div class="">
+        <h1>Mini Puzzle Game</h1>
+        <div class="upload-container">
+          <label for="difficulty">選擇難度：</label>
+          <input type="number" id="difficulty" min="2" max="10" value="3" />
+          <input
+            type="file"
+            id="upload"
+            class="upload-input"
+            accept="image/*"
+          />
+          <label for="startBtn" id="start-btn">開始遊戲</label>
+        </div>
+        <div class="game-container">
+          <div id="puzzle-board">
+            <div id="start-hint">請上傳圖片並點擊「開始遊戲」</div>
+          </div>
+          <p id="message"></p>
+        </div>
+      </div>
+    </main>
+    <div id="preview-area">
+      <p>圖片預覽：</p>
+      <img
+        id="preview"
+        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='150'%20height='150'%20viewBox='0%200%20150%20150'%3E%3Crect%20width='100%25'%20height='100%25'%20fill='%23f0f0f0'/%3E%3Ctext%20x='50%25'%20y='50%25'%20dominant-baseline='middle'%20text-anchor='middle'%20fill='%23999'%20font-size='14'%20font-family='Arial'%3E預覽圖片%3C/text%3E%3C/svg%3E"
+        alt="預覽圖片"
+        style="max-width: 300px; border: 1px solid #ccc"
+      />
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
