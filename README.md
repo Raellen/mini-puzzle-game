@@ -2,6 +2,8 @@
 
 一個純 HTML、CSS、JavaScript 製作的拼圖小遊戲，支援使用者上傳圖片、自訂難度（2x2 ～ 10x10），並使用拖曳操作完成拼圖。
 
+[點我預覽頁面](https://raellen.github.io/mini-puzzle-game/)
+
 ![預覽圖](./images/mini-puzzle-game.png)
 
 ---
